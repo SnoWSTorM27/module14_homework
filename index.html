@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 200px 200px auto;
+        }
+        button{
+            color: rgb(109, 218, 208);
+            background-color: #763626;
+            margin: 5px;
+            padding: 20px;
+        }
+
+        h1{
+            grid-column: 1/4;
+        }
+        
+        .styleTask {
+            padding: 5px 5px; 
+            background-origin: padding-box;
+            border: 3px solid #66a5ad;
+            border-radius: 15px;
+            display: inline-block;
+            grid-column: 1/3;
+            margin: 20px;
+        }
+        .btn-task {
+            position: relative;
+            top: .3em;
+            padding: 5px 30px 5px 30px;
+        }
+        :focus:-moz-placeholder {
+            color: transparent
+        }
+        :focus::-webkit-input-placeholder {
+            color: transparent
+        }
+
+        :focus::-moz-placeholder {
+        color: transparent
+        }
+
+        :focus:-moz-placeholder {
+        color: transparent
+        }
+
+        :focus:-ms-input-placeholder {
+        color: transparent
+        }
+
+        p{
+            text-align: start; 
+            font: size 14px;
+            line-height: 8px;
+            font-style: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .inputTask {
+            border-radius: 10px;
+            border:2px #324851;
+            width: 200px;
+
+        }
+        .imageTask{
+            margin: 10px;
+            border: 0px;
+            padding: 5px;
+            width: auto;
+        }
+
+    </style>
+    <script src="./Task1.js"></script>
+    <script src="./Task2.js"></script>
+    <script src="./Task3.js"></script>
+    <script src="./Task4.js"></script>
+    <script src="./Task5.js"></script>
+</head>
+<body>
+    
+    <h1>Откройте консоль</h1>
+    <button onclick="console.clear(); Task1()">Задание 1</button>
+    <button onclick="console.clear(); Task2()">Задание 2</button>
+    <div class="styleTask">
+        <p>Задание 3</p>
+        <input class="imputTask" id="input-3" type="text" placeholder="Число от 1 до 10"/>
+        <button class="btn-task" onclick="console.clear()" id="btn-3">Запуск!</button>
+        <div class="imageTask" id="output-3"></div>
+    </div>
+    <div class="styleTask">
+        <p>Задание 4</p>
+        <input class="imputTask" id="input-4" type="text" placeholder="Число от 100 до 300"/>
+        <button class="btn-task"  id="btn-4">Запуск!</button>
+        <div class="imageTask" id="output-4"></div>
+    </div>
+    <div class="styleTask">
+        <p>Задание 5</p>
+        <h2>Номер страницы</h2>
+        <input class="imputTask" id="input-51" type="text" placeholder="Число от 1 до 10"/>
+        <h2>Лимит</h2>
+        <input class="imputTask" id="input-52" type="text" placeholder="Число от 1 до 10"/>
+        <button class="btn-task"  id="btn-5">Запрос!</button>
+        <div class="imageTask" id="output-5"></div>
+    </div>
+</body>
+</html>
+
